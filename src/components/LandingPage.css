@@ -1,0 +1,71 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--ejo-gradient);
+  color: var(--white);
+  text-align: center;
+  position: relative;
+}
+
+.landing-logo {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.landing-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--white);
+  text-shadow: 2px 2px 6px var(--ejo-dark);
+}
+
+.landing-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--ejo-light);
+}
+
+.landing-button {
+  background: var(--button);
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--white);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.landing-button:hover {
+  background: var(--button-hover);
+  transform: scale(1.05);
+}
+
+.landing-footer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 0.9rem;
+}
+
+.landing-footer a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.landing-footer a:hover {
+  text-decoration: underline;
+}

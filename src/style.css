@@ -1,0 +1,153 @@
+:root {
+  /* 🎨 Ejo Brand Colors */
+  --ejo-primary: #FF6B6B;      /* Warm sunrise red */
+  --ejo-secondary: #4ECDC4;    /* Fresh morning teal */
+  --ejo-accent: #FFE66D;       /* Dawn yellow */
+  --ejo-dark: #2A2A2A;         /* Soft black */
+  --ejo-light: #F7F7F7;        /* Off white */
+  --ejo-gradient: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+
+  /* Dynamic assignments */
+  --button: var(--ejo-secondary);
+  --button-hover: var(--ejo-primary);
+  --white: #fff;
+  --black: #1a1a1a;
+  --background: var(--ejo-light);
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background: var(--background);
+  color: var(--ejo-dark);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background: var(--button);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: var(--button-hover);
+}
+
+.grid-cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--ejo-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: var(--white);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* Selected cell */
+.grid-cell.first-selected {
+  background-color: var(--ejo-accent);
+  border: 2px solid var(--ejo-primary);
+  animation: pulse 1s infinite;
+}
+
+/* Found word cells */
+.grid-cell.found {
+  background-color: var(--ejo-secondary);
+  color: var(--white);
+}
+
+/* Invalid selection */
+.grid-cell.invalid-selection {
+  background-color: var(--ejo-primary);
+  border: 2px solid darkred;
+}
+
+.word-item {
+  padding: 8px 12px;
+  margin: 5px 0;
+  background-color: var(--ejo-light);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.word-item:hover {
+  background: var(--ejo-accent);
+  transform: translateY(-2px);
+}
+
+.word-item.found {
+  background-color: var(--ejo-secondary);
+  color: var(--white);
+  border-color: var(--ejo-dark);
+  text-decoration: line-through;
+}
+
+.points-animation.success {
+  color: var(--ejo-secondary);
+}
+.points-animation.error {
+  color: var(--ejo-primary);
+}
+.points-animation.points {
+  color: var(--ejo-accent);
+}
+.points-animation.complete {
+  color: var(--ejo-primary);
+  text-shadow: 1px 1px 3px var(--ejo-dark);
+}
+
+.score-section {
+  background: var(--ejo-gradient);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--ejo-accent);
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.admin-panel {
+  background: var(--white);
+  border: 2px solid var(--ejo-primary);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.admin-panel h2 {
+  color: var(--ejo-primary);
+}
+
+.admin-panel button {
+  background: var(--ejo-primary);
+  color: var(--white);
+}
+.admin-panel button:hover {
+  background: var(--ejo-secondary);
+}
+
