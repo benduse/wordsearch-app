@@ -38,7 +38,13 @@ button {
 button:hover {
   background: var(--button-hover);
 }
-
+.grid{
+  display: flex;
+  flex-direction: column;
+}
+.grid-row {
+  display: flex;
+}
 .grid-cell {
   width: 30px;
   height: 30px;
@@ -113,7 +119,8 @@ button:hover {
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
+  margin-top:20px;
 }
 
 .progress-bar {
@@ -130,24 +137,3 @@ button:hover {
   width: 0%;
   transition: width 0.5s ease;
 }
-
-.admin-panel {
-  background: var(--white);
-  border: 2px solid var(--ejo-primary);
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 40px;
-}
-
-.admin-panel h2 {
-  color: var(--ejo-primary);
-}
-
-.admin-panel button {
-  background: var(--ejo-primary);
-  color: var(--white);
-}
-.admin-panel button:hover {
-  background: var(--ejo-secondary);
-}
-

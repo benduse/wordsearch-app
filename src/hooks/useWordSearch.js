@@ -1,4 +1,3 @@
-// src/hooks/useWordSearch.js
 import { useState, useEffect, useCallback } from "react";
 
 let idCounter = 0;

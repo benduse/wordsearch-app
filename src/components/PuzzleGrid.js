@@ -1,3 +1,5 @@
+import React from "react"; 
+
 const PuzzleGrid = ({ grid, onCellClick }) => (
   <div className="grid">
     {grid.map((row,r)=>(

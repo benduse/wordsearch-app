@@ -1,0 +1,20 @@
+
+.admin-panel {
+  background: var(--white);
+  border: 2px solid var(--ejo-primary);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.admin-panel h2 {
+  color: var(--ejo-primary);
+}
+
+.admin-panel button {
+  background: var(--ejo-primary);
+  color: var(--white);
+}
+.admin-panel button:hover {
+  background: var(--ejo-secondary);
+}
