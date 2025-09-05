@@ -35,7 +35,7 @@ const GameScreen = () => {
 
   return (
     <div className="app">
-      <h1>Kinyarwanda Word Search Puzzle</h1>
+      <h1>ejo Kinyarwanda Word Search Puzzle</h1>
       <InstructionsBox/>
       <ThemeSelector allThemes={allThemes} currentThemeIndex={currentThemeIndex} onThemeSelected={i=>setCurrentThemeIndex(parseInt(i))}/>
       <div className="puzzle-container">
